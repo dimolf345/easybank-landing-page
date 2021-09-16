@@ -1,0 +1,37 @@
+{
+  "name": "easybank-landing-page",
+  "version": "1.0.0",
+  "description": "A challenge from FrontendMentor.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p compile-sass dev",
+    "dev": "parcel ./src/index.html",
+    "compile-sass": "node-sass -w ./src/scss/main.scss ./src/css/style.css",
+    "prebuild": "npx rimraf build",
+    "build": "parcel build ./src/index.html --public-url ./  --experimental-scope-hoisting --out-dir build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dimolf345/easybank-landing-page.git"
+  },
+  "keywords": [
+    "Sass",
+    "Bootstrap",
+    "Parcel"
+  ],
+  "author": "Luca Di Molfetta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimolf345/easybank-landing-page/issues"
+  },
+  "homepage": "https://github.com/dimolf345/easybank-landing-page#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.39.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "node-sass": "^6.0.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
