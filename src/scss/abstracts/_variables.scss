@@ -1,0 +1,30 @@
+// COLOR PALETTE
+$dark-blue: hsl(233, 26%, 24%);
+$lime-green: hsl(136, 65%, 51%);
+$bright-cyan: hsl(192, 70%, 51%);
+$grayish-blue: hsl(233, 8%, 62%);
+$light-grayish-blue: hsl(220, 16%, 96%);
+$very-light-gray: hsl(0, 0%, 98%);
+$white: #fff;
+$text-primary: $dark-blue;
+$text-secondary: $grayish-blue;
+$btn-background: linear-gradient(135deg, $lime-green, $bright-cyan);
+
+// PADDINGS
+$desktop-x-large-padding: 0 16.5rem;
+$desktop-large-padding: 0 5rem;
+$mobile-padding: 2.4rem;
+
+// BREAKPOINTS
+$x-large: 90em; //1440px
+$large: 62em; //992px
+$medium: 48em; //768px
+$small: 36em; //576px
+$x-small: 24em; //about 375px
+
+// FONT-SIZES
+$desktop-navlink-fs: 1.5rem;
+
+// LAYOUT
+$mobile-navbar-height: 6.4rem;
+$mobile-navlist-margin: 2.4rem;
