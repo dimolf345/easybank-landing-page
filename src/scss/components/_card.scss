@@ -1,0 +1,22 @@
+.card {
+  &__icon {
+    width: 72px;
+    height: 72px;
+
+    &--wallet {
+      background-image: url("../assets/images/icon-online.svg");
+    }
+
+    &--budgeting {
+      background-image: url("../assets/images/icon-budgeting.svg");
+    }
+
+    &--onboarding {
+      background-image: url("../assets/images/icon-onboarding.svg");
+    }
+
+    &--api {
+      background-image: url("../assets/images/icon-api.svg");
+    }
+  }
+}

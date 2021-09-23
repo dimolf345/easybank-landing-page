@@ -1,15 +1,29 @@
-body > * {
+header,
+section {
   padding: $desktop-x-large-padding;
+  max-width: 192rem;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media only screen and (max-width: $large) {
-  body > * {
+  header,
+  section {
     padding: $desktop-large-padding;
   }
 }
 
 @media only screen and (max-width: $small) {
-  body > * {
+  header,
+  section {
     padding: 0 2.4rem;
   }
 }

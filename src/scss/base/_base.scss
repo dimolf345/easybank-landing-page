@@ -18,6 +18,7 @@ html {
 body {
   box-sizing: border-box;
   font-family: "Public Sans", sans-serif;
+  margin: 0 auto;
 }
 
 //GENERAL STYLES
@@ -35,4 +36,9 @@ button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+section {
+  height: $section-height;
+  width: 100%;
 }

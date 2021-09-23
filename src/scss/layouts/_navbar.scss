@@ -1,9 +1,21 @@
+@keyframes expanding {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 100vh;
+  }
+}
 .navbar {
-  height: 8rem;
+  height: $desktop-navbar-height;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  position: relative;
+  z-index: 5; //in order to display the navbar on top hero__image
 
   &__list {
     max-width: 33rem;
@@ -32,11 +44,19 @@
   &__background {
     display: none;
     height: 0;
+    width: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
   }
 
   &__link {
     display: inline-block;
+  }
+}
 
+@media only screen and (min-width: $medium) {
+  .navbar__link {
     &::after {
       content: "";
       width: 0;
@@ -61,7 +81,7 @@
     align-items: center;
 
     &__btn {
-      display: none;
+      display: none !important;
     }
 
     &__list {
@@ -83,8 +103,6 @@
 
   .expanded {
     .navbar {
-      position: sticky;
-      transition: height 2s ease 1s;
       &__toggler {
         background: url("../../assets/images/icon-close.svg"),
           url("../assets/images/icon-close.svg");
@@ -92,16 +110,15 @@
       }
 
       &__background {
-        position: fixed;
         background: linear-gradient(180deg, #2d314d 0%, #fff);
         opacity: 0.9;
         width: 100%;
-        height: 100vh;
         top: $mobile-navbar-height;
-        left: 0;
         display: block;
         z-index: -1;
         visibility: visible;
+        animation: expanding 0.5s ease-out;
+        animation-fill-mode: forwards;
       }
 
       &__list {
