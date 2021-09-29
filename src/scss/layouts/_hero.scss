@@ -6,14 +6,11 @@
   position: relative;
 
   &__description {
-    order: 0;
     align-self: center;
-    padding-right: calc(7rem - 1 * vw);
   }
 
   &__image-container {
-    order: 1;
-    max-height: 100%;
+    min-height: 100%;
     position: relative;
     background: url("../assets/images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
@@ -27,5 +24,41 @@
     top: -4rem;
     width: 100%;
     max-width: 700px;
+  }
+}
+
+@media only screen and (max-width: $large) {
+  .hero {
+    grid-template-columns: 34% 66%;
+    &__image-container {
+      background-position: left center;
+      background-size: cover;
+    }
+
+    &__image {
+      max-width: auto;
+      width: 100%;
+      top: 2%;
+    }
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .hero {
+    grid-template-columns: 1fr;
+
+    &__image-container {
+      grid-row: 1;
+    }
+
+    &__image {
+      position: static;
+      display: block;
+      height: 75vw;
+      width: auto;
+      max-width: 500px;
+      margin: 0 auto;
+      margin-top: -8%;
+    }
   }
 }

@@ -4,8 +4,38 @@ h1 {
   line-height: 1.25;
 }
 
+h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
 p {
   color: $text-secondary;
   font-size: 1.6rem;
   line-height: 1.6;
+}
+
+@media only screen and (max-width: $v-large) {
+  h1 {
+    font-size: 4.3rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+}
+
+@media only screen and (max-width: $large) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
 }

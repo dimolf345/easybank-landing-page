@@ -1,7 +1,10 @@
 .card {
+  min-height: 40rem;
+
   &__icon {
     width: 72px;
     height: 72px;
+    margin-bottom: 4rem;
 
     &--wallet {
       background-image: url("../assets/images/icon-online.svg");
@@ -18,5 +21,63 @@
     &--api {
       background-image: url("../assets/images/icon-api.svg");
     }
+  }
+
+  &__title {
+    margin-bottom: 2.6rem;
+  }
+
+  &__image {
+    display: block;
+    height: 200px;
+    width: 100%;
+    border-radius: inherit;
+  }
+
+  &__text {
+    padding: 2.4rem;
+  }
+
+  &__author {
+    color: $text-secondary;
+    display: inline-block;
+    margin-bottom: 0.8rem;
+  }
+
+  &--rounded {
+    background-color: white;
+    border-radius: 3px;
+    overflow: clip;
+
+    .card__title {
+      font-size: 1.6rem;
+      line-height: 1.25;
+      margin-bottom: 0.8rem;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $lime-green;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $large) {
+  .card {
+    min-height: auto;
+
+    &--rounded {
+      .card__title {
+        font-size: 2.6rem;
+      }
+    }
+
+    &__description {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__author {
+    font-size: 1.5rem;
   }
 }

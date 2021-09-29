@@ -25,6 +25,12 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
+  padding: 0.2rem;
+
+  &:focus {
+    border: 3px solid black;
+  }
 }
 
 ul {
@@ -39,6 +45,6 @@ button {
 }
 
 section {
-  height: $section-height;
+  min-height: $section-height;
   width: 100%;
 }

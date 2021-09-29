@@ -8,15 +8,18 @@ $very-light-gray: hsl(0, 0%, 98%);
 $white: #fff;
 $text-primary: $dark-blue;
 $text-secondary: $grayish-blue;
+$text-hover: $lime-green;
 $btn-background: linear-gradient(135deg, $lime-green, $bright-cyan);
 
 // PADDINGS
 $desktop-x-large-padding: 0 12%;
+$desktop-v-large-padding: 0 7%;
 $desktop-large-padding: 0 5rem;
 $mobile-padding: 2.4rem;
 
 // BREAKPOINTS
 $x-large: 90em; //1440px
+$v-large: 75em;
 $large: 62em; //992px
 $medium: 48em; //768px
 $small: 36em; //576px
