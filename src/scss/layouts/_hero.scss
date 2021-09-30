@@ -80,8 +80,13 @@
 
 @media only screen and (max-width: $small) {
   .hero {
+    &__image-container {
+      height: min-content;
+    }
+
     &__image {
-      max-width: 400px;
+      max-width: 100%;
+      height: auto;
     }
   }
 }
