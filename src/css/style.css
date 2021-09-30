@@ -268,7 +268,7 @@ p {
       display: block;
       width: 25px;
       height: 25px;
-      background: url("../../assets/images/icon-hamburger.svg"), url("../assets/images/icon-hamburger.svg");
+      background: url("../assets/images/icon-hamburger.svg");
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center; }
