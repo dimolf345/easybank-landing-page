@@ -104,8 +104,7 @@
   .expanded {
     .navbar {
       &__toggler {
-        background: url("../../assets/images/icon-close.svg"),
-          url("../assets/images/icon-close.svg");
+        background: url("../assets/images/icon-close.svg");
         @include background-center;
       }
 
@@ -123,9 +122,8 @@
 
       &__list {
         position: absolute;
-        width: calc(100% - 2 * #{$mobile-navlist-margin});
-        top: $mobile-navbar-height;
-        margin: $mobile-navlist-margin;
+        width: calc(100%);
+        top: calc(#{$mobile-navbar-height} + 2.4rem);
         left: 0;
         max-width: none;
         visibility: visible;

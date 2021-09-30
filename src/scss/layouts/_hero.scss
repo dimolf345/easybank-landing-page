@@ -46,19 +46,42 @@
 @media only screen and (max-width: $medium) {
   .hero {
     grid-template-columns: 1fr;
+    padding: 0;
+    min-height: 100vh;
+    padding-bottom: 8rem;
 
     &__image-container {
       grid-row: 1;
+      background: url("../assets/images/bg-intro-mobile.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     &__image {
       position: static;
       display: block;
-      height: 75vw;
+      height: 100%;
       width: auto;
       max-width: 500px;
       margin: 0 auto;
       margin-top: -8%;
+    }
+
+    &__description {
+      text-align: center;
+      padding: 4rem 2.4rem 0;
+    }
+
+    .btn {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (max-width: $small) {
+  .hero {
+    &__image {
+      max-width: 400px;
     }
   }
 }

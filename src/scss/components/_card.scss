@@ -67,6 +67,7 @@
     min-height: auto;
 
     &--rounded {
+      text-align: left;
       .card__title {
         font-size: 2.6rem;
       }
@@ -79,5 +80,26 @@
 
   &__author {
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: $small) {
+  .card {
+    &--rounded {
+      min-height: 40rem;
+    }
+
+    &__icon {
+      margin: 2.4rem auto;
+    }
+
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+
+    .card__title {
+      font-size: 2rem;
+    }
   }
 }

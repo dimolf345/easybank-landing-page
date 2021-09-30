@@ -1,4 +1,3 @@
-// import * as bootstrap from "bootstrap";
 "use strict";
 
 let toggler = document.getElementById("navbarToggler");
